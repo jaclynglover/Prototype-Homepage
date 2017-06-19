@@ -61,7 +61,7 @@ h1 {
   margin-right: auto;
 }
 
-#slideshow li{
+.slideshow li{
   list-style-type: none;
   margin: 1px;
   padding: 0;
@@ -71,3 +71,6 @@ h1 {
   height: 100%;
 }
 
+.caption {
+  text-align: center;
+}

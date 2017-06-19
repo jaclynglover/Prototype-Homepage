@@ -1,14 +1,17 @@
-var photoWidth = 100%;
+$(document).ready(function)changeBackground () {
+  $('#photoTwo').hide();
+  $('#photoThree').hide();
+  $('#photoFour').hide();
+  var counter = 0;
 
-$(document).ready(function() {
-	var currentPhoto = 0; 
-    var allPhotos = $('#slideshow li img').length;
-    $("#slideshow ul").width(allPhotos*photoWidth);
-    $('.next').click(function(){
-      currentPhoto++;
-      if(currentPhoto>=allPhotos) currentPhoto = 0;
-      setFramePosition(currentPhoto);
-    $('.next').click(hide();
-    });
-  });
-});
+function changeOnClick() {
+  $('#next').click(function() {
+  if (counter === 0) {
+    $('#photoOne').show();
+    $('#photoTwo').hide();
+    $('#photoThree').hide();
+    $('#photoFour').hide();
+      counter = counter + 1;
+   };
+  };
+}
